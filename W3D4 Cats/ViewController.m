@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Photo.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) NSMutableArray *photoObjects;
 @end
 
 @implementation ViewController
@@ -39,13 +40,13 @@
             NSLog(@"jsonError: %@", jsonError.localizedDescription);
             return;
         }
-//        for(NSString *key in [photoDict2 allKeys]) {
-//            NSLog(@"%@",[photoDict2 objectForKey:key]);
-       // }
+
         for (NSDictionary *dict in photoDict) {
-            NSString *photoName = dict[@"title"];
-            NSLog(@"image name: %@", photoName);
-            
+            //NSString *photoName = dict[@"title"];
+            //NSLog(@"image name: %@", photoName);
+            Photo *photo = [[Photo alloc] initWithPhotoDictionary:dict];
+            NSLog(@"URL:%@", photo.url);
+            [self.photoObjects addObject:photo];
         }
         
         
@@ -54,10 +55,6 @@
     [dataTask resume];
     
 
-}
-
-- (void)constructURL {
-    
 }
 
 
