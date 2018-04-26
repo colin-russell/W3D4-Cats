@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface Photo : NSObject
 @property (nonatomic, strong)NSString *name;
 @property (nonatomic, strong)NSString *url;
+@property (nonatomic, weak)UIImage *image;
 - (instancetype)initWithPhotoDictionary:(NSDictionary *)dictionary;
 @end
