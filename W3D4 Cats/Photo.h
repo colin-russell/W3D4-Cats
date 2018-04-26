@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Photo : NSObject
-@property (nonatomic, strong)NSDictionary *photoDictionary;
 @property (nonatomic, strong)NSString *name;
 @property (nonatomic, strong)NSString *url;
 - (instancetype)initWithPhotoDictionary:(NSDictionary *)dictionary;

@@ -8,6 +8,7 @@
 
 #import "Photo.h"
 @interface Photo()
+@property (nonatomic, strong)NSDictionary *photoDictionary;
 @property (nonatomic, strong)NSString *server;
 @property (assign)NSNumber *farm;
 @property (nonatomic, strong)NSString *photoId;

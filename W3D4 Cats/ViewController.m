@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.photoObjects = [NSMutableArray new];
     
     NSURL *flickrCatUrl = [NSURL URLWithString:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=178d9e3064aa836a8bac2c18eea8957e&tags=cat"];
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:flickrCatUrl];
@@ -40,15 +40,13 @@
             NSLog(@"jsonError: %@", jsonError.localizedDescription);
             return;
         }
-
+        
         for (NSDictionary *dict in photoDict) {
-            //NSString *photoName = dict[@"title"];
-            //NSLog(@"image name: %@", photoName);
             Photo *photo = [[Photo alloc] initWithPhotoDictionary:dict];
             NSLog(@"URL:%@", photo.url);
             [self.photoObjects addObject:photo];
+            NSLog(@"count: %lu", self.photoObjects.count);
         }
-        
         
     }];
     
