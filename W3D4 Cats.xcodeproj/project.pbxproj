@@ -13,6 +13,7 @@
 		3BF53AEE209271BA00590C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF53AED209271BA00590C35 /* Assets.xcassets */; };
 		3BF53AF1209271BA00590C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF53AEF209271BA00590C35 /* LaunchScreen.storyboard */; };
 		3BF53AF4209271BA00590C35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF53AF3209271BA00590C35 /* main.m */; };
+		3BF53AFC20927A9B00590C35 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF53AFB20927A9B00590C35 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		3BF53AF0209271BA00590C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF53AF2209271BA00590C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF53AF3209271BA00590C35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BF53AFA20927A9B00590C35 /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		3BF53AFB20927A9B00590C35 /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				3BF53AEF209271BA00590C35 /* LaunchScreen.storyboard */,
 				3BF53AF2209271BA00590C35 /* Info.plist */,
 				3BF53AF3209271BA00590C35 /* main.m */,
+				3BF53AFA20927A9B00590C35 /* Photo.h */,
+				3BF53AFB20927A9B00590C35 /* Photo.m */,
 			);
 			path = "W3D4 Cats";
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF53AFC20927A9B00590C35 /* Photo.m in Sources */,
 				3BF53AE9209271B600590C35 /* ViewController.m in Sources */,
 				3BF53AF4209271BA00590C35 /* main.m in Sources */,
 				3BF53AE6209271B600590C35 /* AppDelegate.m in Sources */,
