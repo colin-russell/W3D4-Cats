@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *photoObjects;
+
 @end
 
 @implementation ViewController

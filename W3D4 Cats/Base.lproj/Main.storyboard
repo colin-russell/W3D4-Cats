@@ -28,17 +28,17 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Klg-jE-cgg">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Klg-jE-cgg">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-RE-8op">
+                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-RE-8op">
                                                     <rect key="frame" x="0.0" y="0.0" width="172" height="107"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-b7-Wxe">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-b7-Wxe">
                                                     <rect key="frame" x="0.0" y="107" width="172" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -48,6 +48,7 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="LB5-RE-8op" firstAttribute="width" secondItem="Klg-jE-cgg" secondAttribute="width" id="1tQ-1U-mum"/>
+                                            <constraint firstItem="LB5-RE-8op" firstAttribute="top" secondItem="Klg-jE-cgg" secondAttribute="top" id="4pK-Iy-fZR"/>
                                             <constraint firstItem="LB5-RE-8op" firstAttribute="centerX" secondItem="Klg-jE-cgg" secondAttribute="centerX" id="aCW-kw-W7K"/>
                                             <constraint firstItem="iI9-b7-Wxe" firstAttribute="top" secondItem="LB5-RE-8op" secondAttribute="bottom" id="cWW-Zi-Mtp"/>
                                             <constraint firstAttribute="bottom" secondItem="iI9-b7-Wxe" secondAttribute="bottom" constant="6" id="fMK-22-J0G"/>
@@ -67,9 +68,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="imageLabel" destination="iI9-b7-Wxe" id="Y4M-lb-a5E"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
