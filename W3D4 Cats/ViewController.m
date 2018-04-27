@@ -80,7 +80,7 @@
 #pragma mark - UICollectionViewDataSource
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [UICollectionViewCell new];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     UIImageView *imageView = [cell viewWithTag:2];
     UILabel *label = [cell viewWithTag:1];
     Photo *photo = self.photoObjects[indexPath.item];

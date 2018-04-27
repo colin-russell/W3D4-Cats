@@ -37,6 +37,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-RE-8op">
                                                     <rect key="frame" x="0.0" y="0.0" width="172" height="107"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="172" id="2dP-Cu-rkn"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-b7-Wxe">
                                                     <rect key="frame" x="0.0" y="107" width="172" height="21"/>
@@ -47,7 +50,6 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="LB5-RE-8op" firstAttribute="width" secondItem="Klg-jE-cgg" secondAttribute="width" id="1tQ-1U-mum"/>
                                             <constraint firstItem="LB5-RE-8op" firstAttribute="top" secondItem="Klg-jE-cgg" secondAttribute="top" id="4pK-Iy-fZR"/>
                                             <constraint firstItem="LB5-RE-8op" firstAttribute="centerX" secondItem="Klg-jE-cgg" secondAttribute="centerX" id="aCW-kw-W7K"/>
                                             <constraint firstItem="iI9-b7-Wxe" firstAttribute="top" secondItem="LB5-RE-8op" secondAttribute="bottom" id="cWW-Zi-Mtp"/>
