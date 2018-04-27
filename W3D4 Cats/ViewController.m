@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Photo.h"
+#import "CatCollectionViewCell.h"
 
 @interface ViewController () <UICollectionViewDataSource>
 @property (nonatomic, strong) NSMutableArray *photoObjects;
@@ -64,9 +65,9 @@
         
         for (NSDictionary *dict in photoDict) {
             Photo *photo = [[Photo alloc] initWithPhotoDictionary:dict];
-            NSLog(@"URL:%@", photo.url);
+            //NSLog(@"URL:%@", photo.url);
             [self.photoObjects addObject:photo];
-            NSLog(@"count: %lu", self.photoObjects.count);
+            //NSLog(@"count: %lu", self.photoObjects.count);
         }
         [NSOperationQueue.mainQueue addOperationWithBlock:^{
             [self.catCollectionView reloadData];
@@ -80,12 +81,11 @@
 #pragma mark - UICollectionViewDataSource
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    UIImageView *imageView = [cell viewWithTag:2];
+    CatCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     UILabel *label = [cell viewWithTag:1];
     Photo *photo = self.photoObjects[indexPath.item];
-    
-    imageView.image = photo.image;
+    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:photo.url]]];
     label.text = photo.title;
     return cell;
 }

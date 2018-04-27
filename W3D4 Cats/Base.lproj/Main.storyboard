@@ -28,21 +28,18 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Klg-jE-cgg">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Klg-jE-cgg" customClass="CatCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-RE-8op">
-                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="107"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="172" id="2dP-Cu-rkn"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-RE-8op">
+                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="113"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-b7-Wxe">
-                                                    <rect key="frame" x="0.0" y="107" width="172" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFc-nc-7W8">
+                                                    <rect key="frame" x="0.0" y="113" width="172" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,13 +47,17 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="LB5-RE-8op" firstAttribute="top" secondItem="Klg-jE-cgg" secondAttribute="top" id="4pK-Iy-fZR"/>
-                                            <constraint firstItem="LB5-RE-8op" firstAttribute="centerX" secondItem="Klg-jE-cgg" secondAttribute="centerX" id="aCW-kw-W7K"/>
-                                            <constraint firstItem="iI9-b7-Wxe" firstAttribute="top" secondItem="LB5-RE-8op" secondAttribute="bottom" id="cWW-Zi-Mtp"/>
-                                            <constraint firstAttribute="bottom" secondItem="iI9-b7-Wxe" secondAttribute="bottom" constant="6" id="fMK-22-J0G"/>
-                                            <constraint firstItem="iI9-b7-Wxe" firstAttribute="centerX" secondItem="Klg-jE-cgg" secondAttribute="centerX" id="oKC-19-n7i"/>
-                                            <constraint firstItem="iI9-b7-Wxe" firstAttribute="width" secondItem="Klg-jE-cgg" secondAttribute="width" id="wfp-RU-0Ha"/>
+                                            <constraint firstItem="LB5-RE-8op" firstAttribute="centerX" secondItem="Klg-jE-cgg" secondAttribute="centerX" id="9YH-4z-jaD"/>
+                                            <constraint firstItem="LB5-RE-8op" firstAttribute="top" secondItem="Klg-jE-cgg" secondAttribute="top" id="CRO-pL-cue"/>
+                                            <constraint firstItem="eFc-nc-7W8" firstAttribute="centerX" secondItem="Klg-jE-cgg" secondAttribute="centerX" id="TKq-G9-0Ek"/>
+                                            <constraint firstItem="LB5-RE-8op" firstAttribute="width" secondItem="Klg-jE-cgg" secondAttribute="width" id="WNj-kD-XyR"/>
+                                            <constraint firstItem="eFc-nc-7W8" firstAttribute="top" secondItem="LB5-RE-8op" secondAttribute="bottom" id="aer-3I-PPX"/>
+                                            <constraint firstItem="eFc-nc-7W8" firstAttribute="width" secondItem="Klg-jE-cgg" secondAttribute="width" id="hex-Dx-VHI"/>
+                                            <constraint firstAttribute="bottom" secondItem="eFc-nc-7W8" secondAttribute="bottom" id="r4h-1j-uj1"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="LB5-RE-8op" id="ctz-xS-zAz"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

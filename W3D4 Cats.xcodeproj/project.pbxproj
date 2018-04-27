@@ -14,6 +14,8 @@
 		3BF53AF1209271BA00590C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF53AEF209271BA00590C35 /* LaunchScreen.storyboard */; };
 		3BF53AF4209271BA00590C35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF53AF3209271BA00590C35 /* main.m */; };
 		3BF53AFC20927A9B00590C35 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF53AFB20927A9B00590C35 /* Photo.m */; };
+		3BF53AFE2092BF2000590C35 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF53AFD2092BF2000590C35 /* car.png */; };
+		3BF53B012092BFCB00590C35 /* CatCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF53B002092BFCB00590C35 /* CatCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		3BF53AF3209271BA00590C35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BF53AFA20927A9B00590C35 /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		3BF53AFB20927A9B00590C35 /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		3BF53AFD2092BF2000590C35 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		3BF53AFF2092BFCB00590C35 /* CatCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatCollectionViewCell.h; sourceTree = "<group>"; };
+		3BF53B002092BFCB00590C35 /* CatCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +71,15 @@
 				3BF53AE7209271B600590C35 /* ViewController.h */,
 				3BF53AE8209271B600590C35 /* ViewController.m */,
 				3BF53AEA209271B600590C35 /* Main.storyboard */,
+				3BF53AFD2092BF2000590C35 /* car.png */,
 				3BF53AED209271BA00590C35 /* Assets.xcassets */,
 				3BF53AEF209271BA00590C35 /* LaunchScreen.storyboard */,
 				3BF53AF2209271BA00590C35 /* Info.plist */,
 				3BF53AF3209271BA00590C35 /* main.m */,
 				3BF53AFA20927A9B00590C35 /* Photo.h */,
 				3BF53AFB20927A9B00590C35 /* Photo.m */,
+				3BF53AFF2092BFCB00590C35 /* CatCollectionViewCell.h */,
+				3BF53B002092BFCB00590C35 /* CatCollectionViewCell.m */,
 			);
 			path = "W3D4 Cats";
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF53AFE2092BF2000590C35 /* car.png in Resources */,
 				3BF53AF1209271BA00590C35 /* LaunchScreen.storyboard in Resources */,
 				3BF53AEE209271BA00590C35 /* Assets.xcassets in Resources */,
 				3BF53AEC209271B600590C35 /* Main.storyboard in Resources */,
@@ -150,6 +159,7 @@
 				3BF53AE9209271B600590C35 /* ViewController.m in Sources */,
 				3BF53AF4209271BA00590C35 /* main.m in Sources */,
 				3BF53AE6209271B600590C35 /* AppDelegate.m in Sources */,
+				3BF53B012092BFCB00590C35 /* CatCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

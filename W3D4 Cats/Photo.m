@@ -28,7 +28,7 @@
         _photoId = [dictionary objectForKey:@"id"];
         _secret = [dictionary objectForKey:@"secret"];
         _url = [self createUrl];
-        _image = [self createImage];
+//        _image = [self createImage];
     }
     return self;
 }
@@ -37,8 +37,8 @@
     return [NSString stringWithFormat:@"https://farm%@.staticflickr.com/%@/%@_%@.jpg", self.farm, self.server, self.photoId, self.secret];
 }
 
-- (UIImage *)createImage {
-    NSLog(@"self.url = %@", self.url);
-    return [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.url]]];
-}
+//- (UIImage *)createImage {
+//    return [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.url]]];
+//}
+
 @end

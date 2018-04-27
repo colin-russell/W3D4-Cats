@@ -12,6 +12,6 @@
 @interface Photo : NSObject
 @property (nonatomic, strong)NSString *title;
 @property (nonatomic, strong)NSString *url;
-@property (nonatomic, weak)UIImage *image;
+//@property (nonatomic, weak)UIImage *image;
 - (instancetype)initWithPhotoDictionary:(NSDictionary *)dictionary;
 @end
