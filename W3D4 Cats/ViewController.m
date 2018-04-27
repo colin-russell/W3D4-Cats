@@ -68,7 +68,9 @@
             [self.photoObjects addObject:photo];
             NSLog(@"count: %lu", self.photoObjects.count);
         }
-        
+        [NSOperationQueue.mainQueue addOperationWithBlock:^{
+            [self.catCollectionView reloadData];
+        }];
     }];
     
     [dataTask resume];
@@ -79,6 +81,12 @@
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [UICollectionViewCell new];
+    UIImageView *imageView = [cell viewWithTag:2];
+    UILabel *label = [cell viewWithTag:1];
+    Photo *photo = self.photoObjects[indexPath.item];
+    
+    imageView.image = photo.image;
+    label.text = photo.title;
     return cell;
 }
 

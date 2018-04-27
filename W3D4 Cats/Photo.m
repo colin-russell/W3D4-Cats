@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         _photoDictionary = dictionary;
-        _name = [dictionary objectForKey:@"title"];
+        _title = [dictionary objectForKey:@"title"];
         _server = [dictionary objectForKey:@"server"];
         _farm = [dictionary objectForKey:@"farm"];
         _photoId = [dictionary objectForKey:@"id"];
